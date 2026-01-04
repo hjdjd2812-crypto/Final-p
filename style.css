@@ -1,0 +1,34 @@
+:root { --bg: #050505; --card: #121214; --primary: #00d4ff; --white: #ffffff; }
+body { background: var(--bg); color: var(--white); font-family: 'Segoe UI', sans-serif; margin: 0; direction: rtl; overflow-x: hidden; }
+.app-page { display: none; padding: 20px 15px 100px; animation: fadeIn 0.3s ease; }
+.app-page.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; } }
+
+.gym-brand { text-align: center; margin-bottom: 25px; color: var(--primary); }
+.main-icon { font-size: 55px; text-shadow: 0 0 15px var(--primary); }
+.glass-card { background: var(--card); border-radius: 20px; padding: 20px; border: 1px solid #222; margin-bottom: 15px; }
+
+input, select { width: 100%; background: #1a1a1c; border: 1px solid #333; padding: 15px; border-radius: 12px; color: white; margin-bottom: 10px; box-sizing: border-box; font-size: 16px; }
+.row { display: flex; gap: 10px; }
+.btn-main { background: var(--primary); color: #000; border: none; padding: 18px; border-radius: 12px; width: 100%; font-weight: bold; font-size: 17px; }
+
+.member-card { padding: 18px; border-radius: 18px; margin-bottom: 12px; background: #1a1a1c; border-right: 5px solid #00ff88; }
+.card-btns { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 12px; }
+.btn-ui { background: #222; color: #fff; border: 1px solid #444; padding: 10px; border-radius: 8px; font-size: 12px; font-weight: bold; }
+
+.bottom-nav { position: fixed; bottom: 0; width: 100%; height: 75px; background: #0c0c0d; display: flex; border-top: 1px solid #222; z-index: 9999; }
+.nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #555; }
+.nav-item.active { color: var(--primary); }
+.nav-item i { font-size: 22px; margin-bottom: 4px; }
+
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 10000; align-items: center; justify-content: center; }
+.modal-content { width: 88%; max-width: 400px; }
+.m-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333; font-size: 15px; }
+
+.btn-whatsapp { background: #25D366; width: 100%; padding: 15px; border-radius: 12px; border: none; color: white; margin: 15px 0; font-weight: bold; }
+.btn-close { background: #444; width: 100%; padding: 12px; border-radius: 12px; border: none; color: white; }
+.finance-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.stat-grid { display: flex; gap: 10px; margin-top: 15px; }
+.stat-box { flex: 1; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 15px; text-align: center; font-size: 14px; }
+.btn-plus { background: var(--primary); width: 60px; border: none; border-radius: 12px; font-size: 24px; color: #000; }
+.btn-reset { background: transparent; color: #ff4444; border: 1px solid #ff4444; padding: 12px; width: 100%; border-radius: 12px; margin-top: 15px; font-size: 12px; }
